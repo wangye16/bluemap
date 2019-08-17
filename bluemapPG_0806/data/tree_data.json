@@ -1,0 +1,59 @@
+[{
+	"id":6,
+	"text":"用地红线",
+	"name":"layer_ydhx",
+	"checked": true
+},
+{
+	"id":1,
+	"text":"三区三线",
+	"name":"sqsx",
+	"children":[{
+		"id":2,
+		"text":"永久基本农田",
+		"name":"layer_ntbhhx",
+		"state":"open",
+		"children":[{
+			"text":"永久基本农田",
+			"name":"layer_ntbhhx"
+		}]
+	},{
+		"id":3,
+		"text":"城镇开发边界",
+		"name":"layer_kfbj",
+		"state":"open",
+		"children":[{
+			"text":"城镇开发边界",
+			"name":"layer_kfbj"
+		}]
+	},{
+		"id":4,
+		"text":"生态控制线",
+		"name":"layer_stbhhx",
+
+		"state":"open",
+		"children":[{
+			"text":"生态控制线",
+			"name":"layer_stbhhx"
+
+		}]
+	},{
+		"id":5,
+		"text":"生态、农业、城镇三类",
+		"name":"layer_sanlei",
+
+		"state":"open",
+	"children":[{
+		"text":"生态空间",
+		"name":"layer_stkj"
+	},{
+		"text":"农业空间",
+		"name":"layer_nykj"
+	},{
+		"text":"城镇空间",
+		"name":"layer_czkj"
+	}]
+	}]
+
+}
+]

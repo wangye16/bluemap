@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>发信息</title>
+	</head>
+	<body>
+		<input type="text" id="text" name="" value="">
+		<button type="button">发送</button>
+		<a target="_blank" onclick="openBlueMap()">打开新页面</a>
+<!--		<a href="http://localhost/new/bluemap/index(1).html">打开新页面</a>-->
+		<script type="text/javascript">
+			function openBlueMap(){
+
+				var button = document.querySelector("button");
+				var msgpage = window.open("http://localhost")
+
+
+				button.onclick = function(){
+					var textarea = document.getElementById('text');
+					var msn ={"type": 1,"value": {"xmdm":293}};
+	 				msgpage.postMessage(msn,"*")
+				}
+			}
+
+
+
+			//收到消息
+			// window.addEventListener("message",function(e){
+			// 	//A向B发送消息来源
+			// 	msgpage = e.source
+			// 	document.title = e.data
+			// 	textarea.value = e.data
+			// })
+		</script>
+	</body>
+</html>
